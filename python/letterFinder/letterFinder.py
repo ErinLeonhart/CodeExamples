@@ -27,12 +27,12 @@ class CharCheck:
     def get_string(self):
         """Receive a string"""
         print("Please enter a word to find the non-repeating letters: ")
-        self.word = raw_input()
+        self.word = input()
         self.seperate()
 
     def seperate(self):
         """Seperate letters
- 
+
         Seperates all the letters from the received word into a dictionary
         """
         for letter in self.word:
