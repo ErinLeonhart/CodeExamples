@@ -74,11 +74,11 @@ void LList<T>::addToHead(T item)
         pHead = pNew;
         pTail = pNew;
         return;
+    }else {
+        pNew->pNext = pHead;
+        pHead->pPrev = pNew;
+        pHead = pNew;
     }
-
-    pNew->pNext = pHead;
-    pHead->pPrev = pNew;
-    pHead = pNew;
 
     m_intItemCount++;
     
@@ -105,13 +105,11 @@ void LList<T>::addToTail(T item)
         pHead = pNew;
         pTail = pNew;
         return;
+    }else {
+        pNew->pPrev = pTail;
+        pTail->pNext = pNew;
+        pTail = pNew;
     }
-   
-
-    pNew->pPrev = pTail;
-    pTail->pNext = pNew;
-    pTail = pNew;
-
     m_intItemCount++;
 
 }
@@ -124,7 +122,7 @@ void LList<T>::addToTail(T item)
 template<typename T>
 int LList<T>::getItemCount()
 {
-    return 0;
+    return m_intItemCount;
 }
 
 // *************************************************
