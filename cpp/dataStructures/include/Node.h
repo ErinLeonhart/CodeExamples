@@ -6,10 +6,6 @@
 
 #include <iostream>
 
-#ifndef NULL
-#define NULL 0
-#endif
-
 template<typename T>
 class Node {
     public:

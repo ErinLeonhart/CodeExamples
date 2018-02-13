@@ -1,10 +1,7 @@
-// ****************************************************************************
-// stack.h
-// ****************************************************************************
 #pragma once
 
 #include <iostream>
-#include "llist.cpp"
+#include "LList.cpp"
 
 template<typename T>
 class Stack : public LList<T>

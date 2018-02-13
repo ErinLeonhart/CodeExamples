@@ -1,21 +1,15 @@
-// ****************************************************************************
-// queue.cpp
-// ****************************************************************************
-
 #pragma once
 
-#include "queue.h"
+#include "Queue.h"
 
 template<typename T>
-void Queue<T>::enqueue(T item)
-{
+void Queue<T>::enqueue(T item) {
     LList<T>::addToTail(item);
     m_itemCount++;
 }
 
 template <typename T>
-T Queue<T>::dequeue()
-{
+T Queue<T>::dequeue() {
     if (m_itemCount > 0){
         T item = LList<T>::peekAtHead();
         LList<T>::removeAtHead();
@@ -26,20 +20,16 @@ T Queue<T>::dequeue()
 }
 
 template <typename T>
-T Queue<T>::peekFront()
-{
+T Queue<T>::peekFront() {
     LList<T>::peekAtHead();
 }
 
 template <typename T>
-T Queue<T>::peekBack()
-{
+T Queue<T>::peekBack() {
     LList<T>::peekAtTail();
 }
 
-
 template <typename T>
-int Queue<T>::getSize()
-{
+int Queue<T>::getSize() {
     return m_itemCount;
 }

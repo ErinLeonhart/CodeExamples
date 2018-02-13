@@ -1,5 +1,5 @@
 #include "UTQueue.h"
-#include "queue.cpp"
+#include "Queue.cpp"
 
 
 TEST_F(UTQueue, enqueue){

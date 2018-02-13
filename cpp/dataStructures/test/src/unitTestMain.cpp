@@ -1,6 +1,7 @@
 #include "gtest/gtest.h"
 #include "UTQueue.cpp"
 #include "UTStack.cpp"
+#include "UTLList.cpp"
 
 
 int main(int argc, char** argv){

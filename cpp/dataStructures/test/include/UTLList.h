@@ -2,5 +2,5 @@
 #include "gtest/gtest.h"
 
 
-class UTQueue: public ::testing::Test {
+class UTLList: public ::testing::Test {
 };

@@ -2,7 +2,7 @@
 // node.cpp
 // ****************************************************************************
 #pragma once
-#include "node.h"
+#include "Node.h"
 
 // *************************************************
 //
@@ -10,22 +10,23 @@
 // 
 // *************************************************
 template<typename T>
-Node<T>::Node()
-{
+Node<T>::Node() {
     pNext = NULL;
     pPrev = NULL;
 }
 
 template<typename T>
-Node<T>::Node(const Node& copy){}
+Node<T>::Node(const Node& copy) {
+    Node<T> *pNew = new Node;
+    pNew->data = copy->data;
+    }
 
 template<typename T>
-Node<T>::Node(const T item)
-{
+Node<T>::Node(const T item) {
     pNext = NULL;
     pPrev = NULL;
     data = item;
 }
 
 template<typename T>
-Node<T>::~Node(){}
+Node<T>::~Node() {}

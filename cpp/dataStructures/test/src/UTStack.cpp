@@ -1,5 +1,5 @@
 #include "UTStack.h"
-#include "stack.cpp"
+#include "Stack.cpp"
 
 
 TEST_F(UTStack, push){

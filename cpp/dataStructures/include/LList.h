@@ -1,14 +1,10 @@
-// ****************************************************************************
-// llist.h
-// ****************************************************************************
-
 #pragma once
 
 #include <iostream>
-#include "node.cpp"
+#include "Node.cpp"
 
 template<typename T>
-class LList{
+class LList {
 public:
     // *************************************************
     //
@@ -74,5 +70,5 @@ private:
     // *************************************************
     Node<T>* pHead;
     Node<T>* pTail;
-    int m_intItemCount;
+    int m_intItemCount = 0;
 };
