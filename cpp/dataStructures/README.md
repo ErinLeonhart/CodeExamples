@@ -14,7 +14,7 @@ With Link Lists you can store multiple sets of data inside of one container that
 Stack: Stack
 ------------
 
-    Similar to a Link List but you only have the ability to see the top item unless you remove or add to it. All items get attached to the top as well as removed from the top.
+Similar to a Link List but you only have the ability to see the top item unless you remove or add to it. All items get attached to the top as well as removed from the top.
 
 Queue: Queue
 ------------
@@ -24,5 +24,5 @@ Like the Stack, however all items are added at the end of the queue while the ca
 BSTree: Binary Search Tree
 --------------------------
 
-    // TODO
+// TODO
     
